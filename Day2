@@ -1,0 +1,9 @@
+#python program to find factorial of N numbers using recursion
+def N_factorial(num):
+  if num<=1:
+    return 1
+  else:
+    return num*N_factorial(num-1)
+number = int(input("enter your number :"))
+fac=N_factorial(number)
+print(f'factorial of {number}={fac}')

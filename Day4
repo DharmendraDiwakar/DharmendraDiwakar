@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int y;
+    cin>>y;
+    for(int i=0;i<y;i++)
+    {   
+        int n;
+        cin>>n;
+        int a[n];
+        int s=0;
+        for(int i=0;i<n;i++)
+        {    
+            cin>>a[i];
+            s=s+a[i];
+
+        }
+        for(int i=0;i<n;i++)
+        {
+            int x;
+            x=(s-a[i])/(n-1);
+            if(a[i]==x)
+            {
+                cout<<i<<" ";
+            }
+        }
+    }
+    return 0;
+}
